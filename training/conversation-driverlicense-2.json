@@ -1,0 +1,1338 @@
+{
+    "name": "DriverLicense",
+    "created": "2016-11-01T18:12:17.751Z",
+    "intents": [{
+        "intent": "cancel",
+        "created": "2016-11-01T18:12:17.751Z",
+        "updated": "2016-11-01T18:12:17.751Z",
+        "examples": [{
+            "text": "back",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "cancel",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "exit",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "go back",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "home",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "quit",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "stop",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }],
+        "description": null
+    }, {
+        "intent": "DriverLicense",
+        "created": "2016-11-01T18:17:12.678Z",
+        "updated": "2016-11-02T20:35:39.306Z",
+        "examples": [{
+            "text": "Get me a license",
+            "created": "2016-11-01T18:29:54.613Z",
+            "updated": "2016-11-01T18:29:54.613Z"
+        }, {
+            "text": "I need a driver license",
+            "created": "2016-11-01T18:17:12.678Z",
+            "updated": "2016-11-01T18:17:12.678Z"
+        }, {
+            "text": "Issue me a driver license",
+            "created": "2016-11-01T18:17:12.678Z",
+            "updated": "2016-11-01T18:17:12.678Z"
+        }, {
+            "text": "I want a driver licence",
+            "created": "2016-11-02T20:35:39.306Z",
+            "updated": "2016-11-02T20:35:39.306Z"
+        }, {
+            "text": "I want to apply for a driver license",
+            "created": "2016-11-02T20:32:17.191Z",
+            "updated": "2016-11-02T20:32:17.191Z"
+        }, {
+            "text": "Tell me how to get a driver license",
+            "created": "2016-11-02T20:35:29.464Z",
+            "updated": "2016-11-02T20:35:29.464Z"
+        }],
+        "description": null
+    }, {
+        "intent": "goodbyes",
+        "created": "2016-11-01T18:12:17.751Z",
+        "updated": "2016-11-01T18:12:17.751Z",
+        "examples": [{
+            "text": "adieu",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "adios",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "aidos",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "au revoir",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "bye",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "bye bye",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "bye now",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "cu later",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "cya",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "farewell",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "go",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "goodbye",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "good bye",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "good day",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "good night",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "gotta go",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "gotta run",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "gtg",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "i have to leave",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I'm leaving",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "later",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "laters",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "leave",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "logging off",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "my time is up",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "ok bye",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "out of time",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "over and out",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "run",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "see ya",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "see ya later",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "see ya soon",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "see you",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "should be going",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "should go",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "signing off",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "signing out",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "so long",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "soon",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "talk to you soon",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "thanks watson",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "thank you",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "then bye",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "toodles",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }],
+        "description": null
+    }, {
+        "intent": "Greeting",
+        "created": "2016-11-01T18:12:17.751Z",
+        "updated": "2016-11-01T18:12:17.751Z",
+        "examples": [{
+            "text": "aloha",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "bad",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "bonjour",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "buenos dias",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "ciao",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "feeling bit low",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "g'day",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "good",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "good day",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "good evening",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "good how are you",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "good morning",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "greetings",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hello",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hello Dolf",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hello, how are you",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hello there",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hello Watson",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hello you",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hey",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "heya",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "hey there",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hi",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hi Dolf",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "hi how are u",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hi there",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hi watson",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "hiya",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Hola",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "hola como estas",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "How are you doing",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "howdy",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I am not feeling good",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I'm feeling good thanks",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Its not that good",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "namaste",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "What's up",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "yello",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "yo",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }],
+        "description": null
+    }, {
+        "intent": "info_general",
+        "created": "2016-11-01T18:12:17.751Z",
+        "updated": "2016-11-01T18:12:17.751Z",
+        "examples": [{
+            "text": "help",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "help me",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "What can I do here?",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "What can you do?",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "What does DUO?",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "what do you know?",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "What services do you offer?",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Where can you help me with?",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }],
+        "description": null
+    }, {
+        "intent": "no",
+        "created": "2016-11-01T18:12:17.751Z",
+        "updated": "2016-11-01T18:12:17.751Z",
+        "examples": [{
+            "text": "Absolutely not",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Definitely Not",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I disagree",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I don't",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I don't think so",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "It isn't",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Negative",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "No",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "No way",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Wrong",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }],
+        "description": null
+    }, {
+        "intent": "offtopic",
+        "created": "2016-11-01T18:12:17.751Z",
+        "updated": "2016-11-01T18:12:17.751Z",
+        "examples": [{
+            "text": "aho",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "asdasdasda",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "asdasidjiwe",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "book a flight for NY on sunday",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "carrot",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "cats are my favorite animal",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "cold",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "cool",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "culd",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "deploy airbags",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "dfddfg",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "don't you know any jokes",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "do you hate",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Do you like",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "do you love",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "fdsafsaHi watson",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "funny",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "go fast",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "go slow",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "hot",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "how close is",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "how far is",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "how far is the moon",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "how far to",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "how many licks does it take to get to the center of a tootsie roll",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "how much do you weigh",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "how old are you",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "how tall are you",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "huhu",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I'd like to have dinner with you",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I enjoy petting cats",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I love dolphins",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I love spicy food",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "i need a new wheelchair",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I need to shut it down",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "it's too dark",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "i want jokes",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I want to date you",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I want to eat tacos everyday",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "i want to see how this demo works",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I want to talk",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "know any jokes",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "lgiths",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "lgits",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "make me a sandwich",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "near",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "nope",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Nuts",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "ok watson, why should I use you",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "open door",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "please open the sunroof",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "poop",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Post-it notes taste terrible.",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "repair my car",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "roll down windows",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "shutdown",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "shut down",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "sup",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "system error, unable to lonin",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "tell me a joke",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "tell me joke",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "tell me jokes",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "tell me some jokes",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "tell me your favorite color",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "tell me your favorite foods",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "test",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "testing om",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "This is awesome",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "This is good",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Turn left",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "what is my speed",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "what is your name",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "what kind of food do you eat",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "What's the speed",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "whats the square root of 70",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "what's the time",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "what's up",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "what's your",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "what's your favorite",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "whats your favorite color",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "whats your favorite movie",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "what's your name",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "whats your name",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "what time is it",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "what types of food do you like",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "when will it be funny",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Where are we",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "where is the poop deck on this ship",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "where should I turn",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "which color is best for wedding",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "why",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "why is the sky blue",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Yolo",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "you are funny",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "You're asking me too much",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }],
+        "description": null
+    }, {
+        "intent": "retry_age",
+        "created": "2016-11-02T21:24:03.537Z",
+        "updated": "2016-11-02T21:24:03.537Z",
+        "examples": [],
+        "description": null
+    }, {
+        "intent": "thanks",
+        "created": "2016-11-01T18:12:17.751Z",
+        "updated": "2016-11-02T18:36:09.286Z",
+        "examples": [{
+            "text": "22",
+            "created": "2016-11-02T18:36:09.286Z",
+            "updated": "2016-11-02T18:36:09.286Z"
+        }, {
+            "text": "bedankt",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "dankje",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "dankjewel",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "dankuwel",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "merci",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "thanks",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "thank you",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "thank you so much",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "thank you very much",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "thanx",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "tnx",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }],
+        "description": null
+    }, {
+        "intent": "yes",
+        "created": "2016-11-01T18:12:17.751Z",
+        "updated": "2016-11-02T17:24:33.359Z",
+        "examples": [{
+            "text": "Absolutely",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Affirmative",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Agreed",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Confirmed",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Correct",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Definitely",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I agree",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "i do",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "I think so",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "OK",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Okay",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Spot on",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Sure",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "text",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "Yes",
+            "created": "2016-11-01T18:12:17.751Z",
+            "updated": "2016-11-01T18:12:17.751Z"
+        }, {
+            "text": "You bet",
+            "created": "2016-11-02T17:24:33.359Z",
+            "updated": "2016-11-02T17:24:33.359Z"
+        }],
+        "description": null
+    }],
+    "updated": "2016-11-02T21:50:04.666Z",
+    "entities": [{
+        "type": null,
+        "entity": "sys-number",
+        "source": "system.entities",
+        "values": [],
+        "created": "2016-11-02T17:13:18.883Z",
+        "updated": "2016-11-02T17:13:18.883Z",
+        "open_list": false,
+        "description": null
+    }],
+    "language": "en",
+    "metadata": null,
+    "description": "Driver License Exercise session 2016-11-01",
+    "dialog_nodes": [{
+        "go_to": null,
+        "output": {
+            "text": "Bye, have a nice day!"
+        },
+        "parent": null,
+        "context": null,
+        "created": "2016-11-01T18:12:17.751Z",
+        "metadata": null,
+        "conditions": "#goodbyes",
+        "description": null,
+        "dialog_node": "node_1_1474983535242",
+        "previous_sibling": "node_1_1474877116075"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": "Do you want to apply for a driver license?"
+        },
+        "parent": null,
+        "context": null,
+        "created": "2016-11-01T18:25:48.388Z",
+        "metadata": null,
+        "conditions": "#DriverLicense",
+        "description": null,
+        "dialog_node": "node_2_1478024748210",
+        "previous_sibling": "node_7_1474992040813"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": "Good for you! <? $age ?> year is a perfect age for driving! <br>Why don't you check out this link: <a href=\"http://www.cbr.nl\">CBR</a>."
+        },
+        "parent": "node_11_1478116689740",
+        "context": null,
+        "created": "2016-11-02T17:18:58.364Z",
+        "metadata": null,
+        "conditions": "$age >= 18 && $age < 70",
+        "description": null,
+        "dialog_node": "node_5_1478107138167",
+        "previous_sibling": null
+    }, {
+        "go_to": null,
+        "output": {
+            "text": "Hi there, how can I help you?"
+        },
+        "parent": null,
+        "context": {
+            "default_counter": 0
+        },
+        "created": "2016-11-01T18:12:17.751Z",
+        "metadata": null,
+        "conditions": "conversation_start",
+        "description": null,
+        "dialog_node": "node_7_1474992040813",
+        "previous_sibling": null
+    }, {
+        "go_to": null,
+        "output": {
+            "text": "How old are you?"
+        },
+        "parent": "node_17_1478120200641",
+        "context": null,
+        "created": "2016-11-02T17:02:47.199Z",
+        "metadata": null,
+        "conditions": "$age_tries < 3",
+        "description": null,
+        "dialog_node": "node_2_1478106166996",
+        "previous_sibling": null
+    }, {
+        "go_to": null,
+        "output": {
+            "text": "I am having trouble understanding you. Try asking your question in a different way."
+        },
+        "parent": "node_2_1474877124258",
+        "context": {
+            "default_counter": 0
+        },
+        "created": "2016-11-01T18:12:17.751Z",
+        "metadata": null,
+        "conditions": "$default_counter>2",
+        "description": null,
+        "dialog_node": "node_3_1474988342547",
+        "previous_sibling": null
+    }, {
+        "go_to": null,
+        "output": {
+            "text": "I can help you with stuff. lots of stuff. Just train me first."
+        },
+        "parent": null,
+        "context": null,
+        "created": "2016-11-01T18:12:17.751Z",
+        "metadata": null,
+        "conditions": "#info_general",
+        "description": null,
+        "dialog_node": "node_2_1474983558459",
+        "previous_sibling": "node_1_1474983535242"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": "I'm done with you! You can start all over again."
+        },
+        "parent": "node_17_1478120200641",
+        "context": null,
+        "created": "2016-11-02T21:36:29.029Z",
+        "metadata": null,
+        "conditions": "$age_tries > 3",
+        "description": null,
+        "dialog_node": "node_21_1478122588463",
+        "previous_sibling": "node_20_1478121730148"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": "I'm not sure about that. You can say things like apply for a driver license."
+        },
+        "parent": "node_2_1474877124258",
+        "context": null,
+        "created": "2016-11-01T18:12:17.751Z",
+        "metadata": null,
+        "conditions": "true",
+        "description": null,
+        "dialog_node": "node_4_1474988385131",
+        "previous_sibling": "node_3_1474988342547"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": "I'm sorry, but at <? $age ?> you're just too young to drive a car! Why don't you wait another <?($age < 17) ? \"\" + (18 - $age) + \" years\" : \"year\" ?>?"
+        },
+        "parent": "node_11_1478116689740",
+        "context": null,
+        "created": "2016-11-02T17:16:45.591Z",
+        "metadata": null,
+        "conditions": "$age <18",
+        "description": null,
+        "dialog_node": "node_4_1478107005376",
+        "previous_sibling": "node_14_1478119827751"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": "To apply for a driver license at age 70 or older, you'll also need a medical statement. Check out the <a href=\"http://www.cbr.nl\">CBR</a> site for details."
+        },
+        "parent": "node_11_1478116689740",
+        "context": null,
+        "created": "2016-11-02T20:38:33.807Z",
+        "metadata": null,
+        "conditions": "$age >= 70 && $age < 120",
+        "description": null,
+        "dialog_node": "node_13_1478119113596",
+        "previous_sibling": "node_5_1478107138167"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": "Well, in that case we're done for today."
+        },
+        "parent": "node_2_1478024748210",
+        "context": null,
+        "created": "2016-11-02T17:03:57.056Z",
+        "metadata": null,
+        "conditions": "#no",
+        "description": null,
+        "dialog_node": "node_3_1478106236844",
+        "previous_sibling": "node_17_1478120200641"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["You're welcome :)", "My pleasure"],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": null,
+        "context": null,
+        "created": "2016-11-01T18:12:17.751Z",
+        "metadata": null,
+        "conditions": "#thanks",
+        "description": null,
+        "dialog_node": "node_1_1475147981810",
+        "previous_sibling": "node_2_1474983558459"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Hi to you too, what can I help you with?", "Hello! I'm doing good. I'm here to help you. Just say the word.", "Hello there!"],
+                "selection_policy": "random"
+            },
+            "context": {
+                "url": "https://duo.nl/particulier/international-student/"
+            }
+        },
+        "parent": null,
+        "context": null,
+        "created": "2016-11-01T18:12:17.751Z",
+        "metadata": null,
+        "conditions": "#Greeting",
+        "description": null,
+        "dialog_node": "node_1_1474877116075",
+        "previous_sibling": "node_2_1478024748210"
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "body",
+            "dialog_node": "node_2_1478106166996"
+        },
+        "output": {
+            "text": "Come on! Stop playing with me. I'll let you try one more time!"
+        },
+        "parent": "node_17_1478120200641",
+        "context": {
+            "age_tries": "<?$age_tries+1?>"
+        },
+        "created": "2016-11-02T21:22:10.367Z",
+        "metadata": null,
+        "conditions": "$age_tries == 3",
+        "description": null,
+        "dialog_node": "node_20_1478121730148",
+        "previous_sibling": "node_2_1478106166996"
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "condition",
+            "dialog_node": "node_2_1478106166996"
+        },
+        "output": {
+            "text": "Nobody gets that old (yet)."
+        },
+        "parent": "node_11_1478116689740",
+        "context": {
+            "age_tries": "<?$age_tries+1?>"
+        },
+        "created": "2016-11-02T20:50:28.024Z",
+        "metadata": null,
+        "conditions": "$age>=120",
+        "description": null,
+        "dialog_node": "node_14_1478119827751",
+        "previous_sibling": "node_13_1478119113596"
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "condition",
+            "dialog_node": "node_2_1478106166996"
+        },
+        "output": {
+            "text": "OK, then I'll need to check your age."
+        },
+        "parent": "node_2_1478024748210",
+        "context": {
+            "age_tries": 0
+        },
+        "created": "2016-11-02T20:56:40.883Z",
+        "metadata": null,
+        "conditions": "#yes",
+        "description": null,
+        "dialog_node": "node_17_1478120200641",
+        "previous_sibling": null
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "condition",
+            "dialog_node": "node_2_1478106166996"
+        },
+        "output": {
+            "text": "You entered: '<?input.text?>'.  That does not look like an age."
+        },
+        "parent": "node_2_1478106166996",
+        "context": {
+            "age_tries": "<?$age_tries+1?>"
+        },
+        "created": "2016-11-02T19:02:50.474Z",
+        "metadata": null,
+        "conditions": "NOT @sys-number",
+        "description": null,
+        "dialog_node": "node_7_1478113370277",
+        "previous_sibling": "node_11_1478116689740"
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "condition",
+            "dialog_node": "node_3_1474988342547"
+        },
+        "output": {
+            "text": ""
+        },
+        "parent": null,
+        "context": {
+            "default_counter": "<?$default_counter+1?>"
+        },
+        "created": "2016-11-01T18:12:17.751Z",
+        "metadata": null,
+        "conditions": "anything_else",
+        "description": null,
+        "dialog_node": "node_2_1474877124258",
+        "previous_sibling": "node_1_1475147981810"
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "condition",
+            "dialog_node": "node_5_1478107138167"
+        },
+        "output": {
+            "text": "I've read your age as: <?@sys-number?> years"
+        },
+        "parent": "node_2_1478106166996",
+        "context": {
+            "age": "<?@sys-number?>"
+        },
+        "created": "2016-11-02T19:58:09.942Z",
+        "metadata": null,
+        "conditions": "@sys-number",
+        "description": null,
+        "dialog_node": "node_11_1478116689740",
+        "previous_sibling": null
+    }],
+    "workspace_id": "16cfd842-7120-40b9-855c-820c07f07ef3"
+}
