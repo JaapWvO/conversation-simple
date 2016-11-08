@@ -4,12 +4,13 @@ declared-services:
     label: conversation
     plan: free
 applications:
-- name: conversation-simple
+- name: Watson_Conversation_JVO_Test1
   command: npm start
   path: .
   memory: 256M
   instances: 1
   services:
-  - conversation-simple-demo-test1
+  - Conversatoin-jvo1
   env:
     NPM_CONFIG_PRODUCTION: false
+    WORKSPACE_ID: 16cfd842-7120-40b9-855c-820c07f07ef3
