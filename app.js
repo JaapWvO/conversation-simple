@@ -71,7 +71,8 @@ app.post( '/api/message', function(req, res) {
   var payload = {
     workspace_id: workspace,
     context: {},
-    input: {}
+    input: {},
+    alternate_intents: true
   };
   if ( req.body ) {
     if ( req.body.input ) {
