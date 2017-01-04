@@ -56,6 +56,10 @@ div {
   -ms-flex-direction: row;
 }
 
+.hidden {
+  display: none;
+}
+
 .responsive-column {
   -webkit-flex: 1;
   -ms-flex: 1;
