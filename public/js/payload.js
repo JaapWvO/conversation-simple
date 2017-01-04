@@ -20,14 +20,22 @@ var PayloadPanel = (function() {
   // Publicly accessible methods defined
   return {
     init: init,
-    togglePanel: togglePanel
+    togglePanel: togglePanel,
+    toggleColumn: hideColumn
   };
-
+  
   // Initialize the module
   function init() {
     payloadUpdateSetup();
   }
 
+  // Toggles hidden / visible of payload column
+  function toggleColumn() {
+    var column = document.querySelector(settings.selectors.payloadColumn);
+    if (column.classList.contains('hidden')) {column.classList.remove('hidden');}
+    else {column.classList.add('hidden');}
+  }
+  
   // Toggle panel between being:
   //    reduced width (default for large resolution apps)
   //    hidden (default for small/mobile resolution apps)
