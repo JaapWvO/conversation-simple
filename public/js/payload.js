@@ -94,8 +94,8 @@ var PayloadPanel = (function() {
       }
       
       // Toggle the payload column if intent indicates this
-      if (isRequest === false && Api.getResponsePayload() && Api.getResponsePayLoad().intents && Api.getResponsePayLoad().intents[0]) {
-      	var intent = Api.getResponsePayLoad().intents[0];
+      if (isRequest === false && Api.getResponsePayload() && Api.getResponsePayload().intents && Api.getResponsePayload().intents[0]) {
+      	var intent = Api.getResponsePayload().intents[0];
       	if (intent.intent == "Toggle_JSON_panel" && intent.confidence > 0.75) { toggleColumn(); }
       }
     }    
