@@ -55,7 +55,7 @@ var conversation = new Watson( {
   version: 'v1'
 } );
 
-// Endpoint to be call from the client side
+// Endpoint to be called from the client side
 app.post( '/api/message', function(req, res) {
   var workspace = process.env.WORKSPACE_ID || '<workspace-id>';
   if ( !workspace || workspace === '<workspace-id>' ) {

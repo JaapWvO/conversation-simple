@@ -32,8 +32,8 @@ var PayloadPanel = (function() {
   // Toggles hidden / visible of payload column
   function toggleColumn() {
     var column = document.querySelector(settings.selectors.payloadColumn);
-    if (column.classList.contains('hidden')) {column.classList.remove('hidden');}
-    else {column.classList.add('hidden');}
+    if (column.classList.contains('hidden')) { column.classList.remove('hidden'); }
+    else { column.classList.add('hidden'); }
   }
   
   // Toggle panel between being:
@@ -42,6 +42,10 @@ var PayloadPanel = (function() {
   //    full width (regardless of screen size)
   function togglePanel(event, element) {
     var payloadColumn = document.querySelector(settings.selectors.payloadColumn);
+    
+    // When button pressed, always remove the 'hidden' attribute from the column
+    if (payloadColumn.classList.contains('hidden')) { payloadColumn.classList.remove('hidden'); }
+    
     if (element.classList.contains('full')) {
       element.classList.remove('full');
       payloadColumn.classList.remove('full');
@@ -70,6 +74,7 @@ var PayloadPanel = (function() {
   // Display a request or response payload that has just been sent/received
   function displayPayload(typeValue) {
     var isRequest = checkRequestType(typeValue);
+        
     if (isRequest !== null) {
       // Create new payload DOM element
       var payloadDiv = buildPayloadDomElement(isRequest);
@@ -87,7 +92,13 @@ var PayloadPanel = (function() {
       if (Api.getRequestPayload() || Api.getResponsePayload()) {
         payloadInitial.classList.add('hide');
       }
-    }
+      
+      // Toggle the payload column if intent indicates this
+      if (isRequest === false && Api.getResponsePayload() && Api.getResponsePayLoad().intents && Api.getResponsePayLoad().intents[0]) {
+      	var intent = Api.getResponsePayLoad().intents[0];
+      	if (intent.intent == "Toggle_JSON_panel" && intent.confidence > 0.75) { toggleColumn(); }
+      }
+    }    
   }
 
   // Checks if the given typeValue matches with the request "name", the response "name", or neither
