@@ -21,7 +21,7 @@ var PayloadPanel = (function() {
   return {
     init: init,
     togglePanel: togglePanel,
-    toggleColumn: toggleColumn
+    setColumnVisibility: setColumnVisibility
   };
 
   // Initialize the module
@@ -29,11 +29,16 @@ var PayloadPanel = (function() {
     payloadUpdateSetup();
   }
 
-  // Toggles hidden / visible of payload column
-  function toggleColumn() {
+  // Set column visibility, either true or false. If no parameter then toggle.
+  function setColumnVisibility(mode){
     var column = document.querySelector(settings.selectors.payloadColumn);
-    if (column.classList.contains('hidden')) { column.classList.remove('hidden'); }
-    else { column.classList.add('hidden'); }
+    var isHidden = column.classList.contains('hidden');
+    
+    // If no parameter then toggle
+    if (mode===undefined || (typeof mode) != boolean) mode = ! isHidden;
+   	
+    if (mode === true && isHidden) column.classList.remove('hidden');    
+    if (mode === false && !isHidden) column.classList.add('hidden');
   }
   
   // Toggle panel between being:
@@ -93,10 +98,29 @@ var PayloadPanel = (function() {
         payloadInitial.classList.add('hide');
       }
       
-      // Toggle the payload column if intent indicates this
+      // Action intents that apply to this panel
+      // TODO maybe generalize and move to more generic location
       if (isRequest === false && Api.getResponsePayload() && Api.getResponsePayload().intents && Api.getResponsePayload().intents[0]) {
-      	var intent = Api.getResponsePayload().intents[0];
-      	if (intent.intent == "Toggle_JSON_panel" && intent.confidence > 0.75) { toggleColumn(); }
+      	var intent = Api.getResponsePayload().intents[0].intent;
+      	// intent can be show, hide, or yes (if it was low confidence and has been confirmed in the WCS dialog)
+      	// Which event has been confirmed is in the context.confirmed_event
+      	switch (intent) {
+      		case "show":
+      		case "hide":
+      		case "yes":
+      			var confirmedIntent = Api.getResponsePayload().context.confirmed_intent;
+      			// check also that entity is for this panel
+      			if (confirmedIntent && 
+      					Api.getResponsePayload().entities.find(
+      						function (e) {return (e.entity == "ScreenPanel" && e.value == "Payload paneel");})) {
+					// confirmedEvent is either show or hide      							
+      				setColumnVisibility(confirmedIntent == "show");
+  				}
+
+      			break;
+      		default:
+      			// no action
+      	}
       }
     }    
   }
