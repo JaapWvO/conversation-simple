@@ -97,6 +97,7 @@ app.post( '/api/message', function(req, res) {
 
 /**
  * Updates the response text using the intent confidence
+ * As a side effect, the current WCS workspace is updated if the intent indicates this
  * @param  {Object} input The request to the Conversation service
  * @param  {Object} response The response from the Conversation service
  * @return {Object}          The response with the updated message
@@ -112,8 +113,24 @@ function updateMessage(input, response) {
       id = uuid.v4();
       logs.insert( {'_id': id, 'request': input, 'response': response, 'time': new Date()});
     }
-    //return response; DEBUG
-  }
+    // Check for change of WCS workspace
+    if ( response.intents && response.intents[0] ) {
+      var intent = response.intents[0];
+      if ( intent.confidence >= 0.75 ) {
+	      if (intent === "to_ws_bank_dutch") {
+	      	currentWS = process.env.WORKSPACE_BANK;
+	      	response.output.text = "SWITCHING WCS WS; " + response.output.text;
+	      }
+	      else if (intent === "to_ws_driverlicence_en") {
+	      	currentWS = process.env.WORKSPACE_DLC;
+	      	response.output.text = "SWITCHING WCS WS; " + response.output.text;
+	      }
+      }
+    }
+    // Normal return point is here.
+    return response;
+  }  
+  // Normally the code below is not executed (only if there is no response output)
   if ( response.intents && response.intents[0] ) {
     var intent = response.intents[0];
     // Depending on the confidence of the response the app can return different messages.
