@@ -117,11 +117,11 @@ function updateMessage(input, response) {
     if ( response.intents && response.intents[0] ) {
       var intent = response.intents[0];
       if ( intent.confidence >= 0.75 ) {
-	      if (intent === "to_ws_bank_dutch") {
+	      if (intent.intent === "to_ws_bank_dutch") {
 	      	currentWS = process.env.WORKSPACE_BANK;
 	      	response.output.text = "SWITCHING WCS WS; " + response.output.text;
 	      }
-	      else if (intent === "to_ws_driverlicence_en") {
+	      else if (intent.intent === "to_ws_driverlicence_en") {
 	      	currentWS = process.env.WORKSPACE_DLC;
 	      	response.output.text = "SWITCHING WCS WS; " + response.output.text;
 	      }
