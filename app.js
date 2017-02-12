@@ -22,6 +22,9 @@ var express = require( 'express' );  // app server
 var bodyParser = require( 'body-parser' );  // parser for post requests
 var Watson = require( 'watson-developer-cloud/conversation/v1' );  // watson sdk
 
+// Workspace can switch from WORKSPACE_BANK to WORKSPACE_DLC and back.
+var currentWS = process.env.WORKSPACE_ID;
+
 // The following requires are needed for logging purposes
 var uuid = require( 'uuid' );
 var vcapServices = require( 'vcap_services' );
@@ -57,7 +60,7 @@ var conversation = new Watson( {
 
 // Endpoint to be called from the client side
 app.post( '/api/message', function(req, res) {
-  var workspace = process.env.WORKSPACE_ID || '<workspace-id>';
+  var workspace = currentWS || '<workspace-id>';
   if ( !workspace || workspace === '<workspace-id>' ) {
     return res.json( {
       'output': {
@@ -109,7 +112,7 @@ function updateMessage(input, response) {
       id = uuid.v4();
       logs.insert( {'_id': id, 'request': input, 'response': response, 'time': new Date()});
     }
-    return response;
+    //return response; DEBUG
   }
   if ( response.intents && response.intents[0] ) {
     var intent = response.intents[0];
