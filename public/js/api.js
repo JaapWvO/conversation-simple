@@ -4,6 +4,7 @@ var Api = (function() {
   var requestPayload;
   var responsePayload;
   var messageEndpoint = '/api/message';
+  var currentWS = "ws_en_driver";
 
   // Publicly accessible methods defined
   return {
@@ -22,13 +23,16 @@ var Api = (function() {
     },
     setResponsePayload: function(newPayloadStr) {
       responsePayload = JSON.parse(newPayloadStr);
+    },
+    setCurrentWorkspace: function(newWS) {
+      currentWS = newWS;
     }
   };
 
   // Send a message request to the server
   function sendRequest(text, context) {
     // Build request payload
-    var payloadToWatson = {};
+    var payloadToWatson = {workspace: currentWS};
     if (text) {
       payloadToWatson.input = {
         text: text

@@ -23,7 +23,6 @@ var bodyParser = require( 'body-parser' );  // parser for post requests
 var Watson = require( 'watson-developer-cloud/conversation/v1' );  // watson sdk
 
 // Workspace can switch from WORKSPACE_BANK to WORKSPACE_DLC and back.
-var currentWS = process.env.WORKSPACE_ID;
 
 // The following requires are needed for logging purposes
 var uuid = require( 'uuid' );
@@ -60,8 +59,7 @@ var conversation = new Watson( {
 
 // Endpoint to be called from the client side
 app.post( '/api/message', function(req, res) {
-  var workspace = currentWS || '<workspace-id>';
-  if ( !workspace || workspace === '<workspace-id>' ) {
+if (!process.env.WORKSPACE_ID || process.env.WORKSPACE_ID === '<workspace-id>' ) {
     return res.json( {
       'output': {
         'text': 'The app has not been configured with a <b>WORKSPACE_ID</b> environment variable. Please refer to the ' +
@@ -71,6 +69,7 @@ app.post( '/api/message', function(req, res) {
       }
     } );
   }
+
   var payload = {
     workspace_id: workspace,
     context: {},
@@ -78,6 +77,11 @@ app.post( '/api/message', function(req, res) {
     alternate_intents: true
   };
   if ( req.body ) {
+    if ( req.body.workspace ) {
+      if (req.workspace == "ws_du_bank") { payload.workspace_id = process.env.WORKSPACE_BANK; }
+      else if (req.workspace == "ws_en_driver") { payload.workspace_id = process.env.WORKSPACE_DLC; }
+      else payload.workspace_id = process.env.WORKSPACE_ID ;
+    }
     if ( req.body.input ) {
       payload.input = req.body.input;
     }
@@ -86,6 +90,7 @@ app.post( '/api/message', function(req, res) {
       payload.context = req.body.context;
     }
   }
+
   // Send the input to the conversation service
   conversation.message( payload, function(err, data) {
     if ( err ) {
@@ -113,23 +118,10 @@ function updateMessage(input, response) {
       id = uuid.v4();
       logs.insert( {'_id': id, 'request': input, 'response': response, 'time': new Date()});
     }
-    // Check for change of WCS workspace
-    if ( response.intents && response.intents[0] ) {
-      var intent = response.intents[0];
-      if ( intent.confidence >= 0.75 ) {
-	      if (intent.intent === "to_ws_bank_dutch") {
-	      	currentWS = process.env.WORKSPACE_BANK;
-	      	response.output.text = "SWITCHING WCS WS; " + response.output.text;
-	      }
-	      else if (intent.intent === "to_ws_driverlicence_en") {
-	      	currentWS = process.env.WORKSPACE_DLC;
-	      	response.output.text = "SWITCHING WCS WS; " + response.output.text;
-	      }
-      }
-    }
     // Normal return point is here.
     return response;
-  }  
+  }
+
   // Normally the code below is not executed (only if there is no response output)
   if ( response.intents && response.intents[0] ) {
     var intent = response.intents[0];

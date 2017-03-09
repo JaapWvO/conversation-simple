@@ -41,8 +41,20 @@ var ConversationPanel = (function() {
     var currentResponsePayloadSetter = Api.setResponsePayload;
     Api.setResponsePayload = function(newPayloadStr) {
       currentResponsePayloadSetter.call(Api, newPayloadStr);
-      displayMessage(JSON.parse(newPayloadStr), settings.authorTypes.watson);
+      var pl = JSON.parse(newPayloadStr)
+      displayMessage(pl, settings.authorTypes.watson);
+      actuateAction(pl);
     };
+  }
+
+  // If the payload contains an action, do execute it
+  // Ought to be in a separate module!
+  function actuateAction(pl) {
+    if (pl.action) {
+      if (pl.action == "ws_en_driver" || pl.action == "ws_du_bank") {
+        Api.setCurrentWorkspace(pl.action);
+      }
+    }
   }
 
 // Set up the input box to underline text as it is typed
