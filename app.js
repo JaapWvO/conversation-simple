@@ -71,15 +71,15 @@ if (!process.env.WORKSPACE_ID || process.env.WORKSPACE_ID === '<workspace-id>' )
   }
 
   var payload = {
-    workspace_id: workspace,
+    workspace_id: process.env.WORKSPACE_ID,
     context: {},
     input: {},
     alternate_intents: true
   };
   if ( req.body ) {
     if ( req.body.workspace ) {
-      if (req.workspace == "ws_du_bank") { payload.workspace_id = process.env.WORKSPACE_BANK; }
-      else if (req.workspace == "ws_en_driver") { payload.workspace_id = process.env.WORKSPACE_DLC; }
+      if (req.workspace === "ws_du_bank") { payload.workspace_id = process.env.WORKSPACE_BANK; }
+      else if (req.workspace === "ws_en_driver") { payload.workspace_id = process.env.WORKSPACE_DLC; }
       else payload.workspace_id = process.env.WORKSPACE_ID ;
     }
     if ( req.body.input ) {
