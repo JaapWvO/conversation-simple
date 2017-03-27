@@ -50,10 +50,10 @@ var ConversationPanel = (function() {
   // If the payload contains an action, do execute it
   // Ought to be in a separate module!
   function actuateAction(pl) {
-    if (pl.action) {
-      if (pl.action === "ws_en_driver" || pl.action === "ws_du_bank") {
-      	console.log("actuateAction: action is "+ pl.action+ "\n");
-        Api.setCurrentWorkspace(pl.action);
+    if (pl.output.action) {
+      if (pl.output.action === "ws_en_driver" || pl.output.action === "ws_du_bank") {
+      	console.log("actuateAction: action is "+ pl.output.action+ "\n");
+        Api.setCurrentWorkspace(pl.output.action);
       }
     }
   }
