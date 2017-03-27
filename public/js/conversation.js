@@ -51,9 +51,16 @@ var ConversationPanel = (function() {
   // Ought to be in a separate module!
   function actuateAction(pl) {
     if (pl.output.action) {
-      if (pl.output.action === "ws_en_driver" || pl.output.action === "ws_du_bank") {
-      	console.log("actuateAction: action is "+ pl.output.action+ "\n");
+      //console.log("actuateAction: action is "+ pl.output.action+ "\n");
+      if (pl.output.action === "ws_en_driver") {
+      	Api.setCurrentWorkspace(pl.output.action);
+        document.getElementById('mytitle').innerHTML = "Japie's Test App - English Driver Conversation";
+      }
+      else if (pl.output.action === "ws_du_bank") {
         Api.setCurrentWorkspace(pl.output.action);
+        document.getElementById('mytitle').innerHTML = "Japie's Test App - Dutch Bank Conversation";
+      } else {
+      	console.log("Unknown action: "+ pl.output.action);
       }
     }
   }
