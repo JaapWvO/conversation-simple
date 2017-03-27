@@ -79,8 +79,8 @@ if (!process.env.WORKSPACE_ID || process.env.WORKSPACE_ID === '<workspace-id>' )
   if ( req.body ) {
     if ( req.body.workspace ) {
     	console.log("Received Workspace: "+req.body.workspace+"\n");
-      if (req.workspace === "ws_du_bank") { payload.workspace_id = process.env.WORKSPACE_BANK; console.log("Set ws_du_bank\n");}
-      else if (req.workspace === "ws_en_driver") { payload.workspace_id = process.env.WORKSPACE_DLC; console.log("Set ws_ec_driver\n");}
+      if (req.body.workspace === "ws_du_bank") { payload.workspace_id = process.env.WORKSPACE_BANK; console.log("Set ws_du_bank\n");}
+      else if (req.body.workspace === "ws_en_driver") { payload.workspace_id = process.env.WORKSPACE_DLC; console.log("Set ws_en_driver\n");}
       else {payload.workspace_id = process.env.WORKSPACE_ID ;console.log("Set default workspace\n");}
     }
     if ( req.body.input ) {
