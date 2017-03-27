@@ -52,6 +52,7 @@ var ConversationPanel = (function() {
   function actuateAction(pl) {
     if (pl.action) {
       if (pl.action === "ws_en_driver" || pl.action === "ws_du_bank") {
+      	console.log("actuateAction: action is "+ pl.action+ "\n");
         Api.setCurrentWorkspace(pl.action);
       }
     }
