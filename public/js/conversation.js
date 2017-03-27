@@ -51,7 +51,7 @@ var ConversationPanel = (function() {
   // Ought to be in a separate module!
   function actuateAction(pl) {
     if (pl.action) {
-      if (pl.action == "ws_en_driver" || pl.action == "ws_du_bank") {
+      if (pl.action === "ws_en_driver" || pl.action === "ws_du_bank") {
         Api.setCurrentWorkspace(pl.action);
       }
     }

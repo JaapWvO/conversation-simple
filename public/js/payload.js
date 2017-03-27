@@ -35,7 +35,7 @@ var PayloadPanel = (function() {
     var isHidden = column.classList.contains('hidden');
     
     // If no parameter then toggle
-    if (mode===undefined || (typeof mode) != boolean) mode = ! isHidden;
+    if (mode===undefined || (typeof mode) !== boolean) mode = ! isHidden;
    	
     if (mode === true && isHidden) column.classList.remove('hidden');    
     if (mode === false && !isHidden) column.classList.add('hidden');
@@ -112,9 +112,9 @@ var PayloadPanel = (function() {
       			// check also that entity is for this panel
       			if (confirmedIntent && 
       					Api.getResponsePayload().entities.find(
-      						function (e) {return (e.entity == "ScreenPanel" && e.value == "Payload paneel");})) {
+      						function (e) {return e.entity === "ScreenPanel" && e.value === "Payload paneel";})) {
 					// confirmedEvent is either show or hide      							
-      				setColumnVisibility(confirmedIntent == "show");
+      				setColumnVisibility(confirmedIntent === "show");
   				}
 
       			break;
