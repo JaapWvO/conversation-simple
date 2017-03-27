@@ -71,7 +71,7 @@ if (!process.env.WORKSPACE_ID || process.env.WORKSPACE_ID === '<workspace-id>' )
   }
 
   var payload = {
-    workspace_id: process.env.WORKSPACE_ID,
+    workspace_id: process.env.WORKSPACE_BANK,
     context: {},
     input: {},
     alternate_intents: true
