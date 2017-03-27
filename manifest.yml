@@ -13,6 +13,6 @@ applications:
   - Conversatoin-jvo1
   env:
     NPM_CONFIG_PRODUCTION: false
-    WORKSPACE_ID: ae5334f7-7777-4070-a834-baa67cc6a2a2
     WORKSPACE_BANK: ae5334f7-7777-4070-a834-baa67cc6a2a2
     WORKSPACE_DLC: 16cfd842-7120-40b9-855c-820c07f07ef3
+    WORKSPACE_ID: 16cfd842-7120-40b9-855c-820c07f07ef3
