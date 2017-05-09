@@ -53,7 +53,9 @@ var conversation = new Watson( {
   // username: '<username>',
   // password: '<password>',
   url: 'https://gateway.watsonplatform.net/conversation/api',
-  version_date: '2016-09-20',
+  //version_date: '2016-09-20',
+  //version_date: '2017-02-03',
+  version_date: '2017-04-21',
   version: 'v1'
 } );
 
